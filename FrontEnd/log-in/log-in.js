@@ -2,6 +2,7 @@
 const LogInForm=document.getElementById("Log-in")
 
 
+
 LogInForm.addEventListener("submit",(e)=>{
     e.preventDefault()
     let obj={
@@ -19,12 +20,14 @@ LogInForm.addEventListener("submit",(e)=>{
     .then(res=>res.json())
     .then((res)=>{
         console.log(res)
-        localStorage.setItem("jwt",res.token)
+        console.log(res)
+        localStorage.setItem("userName",res.user.userName)
+        localStorage.setItem("token",res.token)
         if(res.status){
             alert("Login Successfully")
             setTimeout(() => {
                 redirect()
-            }, 2000);
+            }, 1000);
         }else{
             alert(`Invalid Credentials`)
         }
@@ -37,5 +40,5 @@ LogInForm.addEventListener("submit",(e)=>{
 
 
 function redirect() {
-    location.replace("http://127.0.0.1:5500/FrontEnd/rooms/rooms.html")
+    location.replace("http://127.0.0.1:5500/FrontEnd/AfterLogin/LoginedRoom.html")
   }

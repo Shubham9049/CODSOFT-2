@@ -1,6 +1,16 @@
 let menu = document.querySelector('#menu-btn');
 let navbar = document.querySelector('.header .navbar');
 
+const storedname=localStorage.getItem("userName")
+const loginBtn=document.getElementById("login")
+
+if(storedname){
+    loginBtn.innerHTML=` ${userName} / Logout`
+}else {
+    // loginBtn.innerHTML == ''
+    loginBtn.innerText == 'Login/Signup'
+}
+
 
 
 menu.onclick = () => {

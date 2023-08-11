@@ -35,7 +35,12 @@ UserRoutes.post("/login",async(req,res)=>{
             res.status(200).send({
                 msg:"Login Succesfully",
                 status:true,
-                token :jwt.sign({"_id":loginUser._id,name:loginUser.name},"MySecretKey")
+                token :jwt.sign({"_id":loginUser._id,name:loginUser.name},"MySecretKey"),
+                user : {
+                    userName: loginUser.name,
+                    email : loginUser.email,
+                    phone : loginUser.phone
+                }
             })
            }else{
             res.status(400).send({

@@ -1,13 +1,19 @@
 const token = localStorage.getItem("token") || null
-// const storedname=localStorage.getItem("userName") || null
-// const loginBtn=document.getElementById("login")
+const storedname=localStorage.getItem("userName") || null
+const loginBtn=document.getElementById("login")
+const logout=document.getElementById("logout")
 
-// if(storedname){
-//     loginBtn.textContent=` ${storedname} / Logout`
-// }else {
-//     // loginBtn.innerHTML == ''
-//     loginBtn.textContent == 'Login/Signup'
-// }
+if(storedname){
+    loginBtn.textContent=` ${storedname}`
+}else {
+    // loginBtn.innerHTML == ''
+    loginBtn.textContent == 'Login/Signup'
+}
+
+logout.addEventListener("click",()=>{
+   localStorage.clear()
+   window.location="index.html";
+})
 
 function clickimg(smallImg){
    let fullimg= document.getElementById("imagebox") 
@@ -27,10 +33,7 @@ const bookBtnArr = document.querySelectorAll(".bookBtn")
 bookBtnArr.forEach(bookBtn => {
    bookBtn.addEventListener("click" , () => {
       if(!token){
-       alert("You are not Logged In. Please Log In...")
-       setTimeout(() => {
-         redirected()
-     }, 1000);
+       return alert("You are not Logged In. Please Log In...")
       }else{
        // nextcode
        alert("Next")
@@ -38,6 +41,3 @@ bookBtnArr.forEach(bookBtn => {
     })
 });
 
-function redirected() {
-   location.replace("http://127.0.0.1:5500/FrontEnd/signup.html")
- }

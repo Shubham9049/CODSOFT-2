@@ -1,0 +1,337 @@
+
+/* .navbar */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+
+:root{
+    --primary:#0077b6;
+    --secondary:#48cae4;
+    --black:#333;
+    --white:#fff;
+    --box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+*{
+    font-family: 'poppins',sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform:capitalize;
+    text-decoration: none;
+    /* transition: .2s linear; */
+    outline: none;
+    border: none;
+}
+
+html{
+    font-size: 63%;
+    overflow-x: hidden;
+    scroll-padding-top: 9 rem;
+    scroll-behavior: smooth;
+}
+html::-webkit-scrollbar{
+    width: 0.8rem;
+}
+html::-webkit-scrollbar-track{
+    background: transparent;
+}
+html::-webkit-scrollbar-thumb{
+    background-color: var(--primary);
+    border: 0.5rem;
+}
+section{
+    padding: 5rem 7%;
+}
+.heading{
+    font-size: 4rem;
+    color: var(--primary);
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bolder;
+    margin-bottom: 3rem;
+}
+.header{
+    /* position: fixed; */
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: 1000;
+    background-color:var(--white) ;
+    box-shadow: var(--box-shadow);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 9%;
+}
+
+.header .logo{
+    font-size: 2.5rem;
+    font-weight: bolder;
+    color: var(--black);
+}
+.header .logo i{
+    color: var(--primary);
+    padding-right: 0.5rem;
+}
+
+.header .navbar a{
+    font-size: 1.7rem;
+    color: var(--black);
+    margin: 0 1rem;
+}
+.header .navbar a:hover{
+    color: var(--primary);
+}
+
+#menu-btn{
+    display: none;
+    font-size: 2.5rem;
+    margin-left: 1.7rem;
+    cursor: pointer;
+    color: var(--black);
+
+}
+#menu-btn :hover{
+    color: var(--primary);
+}
+.btn{
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 1rem 3rem;
+    background-color: var(--primary);
+    border-radius: 5rem;
+    cursor: pointer;
+    color: var(--white);
+    font-size: 1.7rem;
+
+}
+.btn:hover{
+    
+background-color: var(--secondary);
+}
+
+.header .navbar .btn{
+    margin-top: 0;
+    color: var(--white);
+}
+
+/* navbar :end */
+
+.box2{
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  margin: 20px 20px;
+    transform: translate(-50%,-50%);
+    width: 400px;
+    background-color: #fff;
+    padding: 15px 30px;
+    border-radius: 10px;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.1);
+    /* border: 2px solid black; */
+}
+.box2 .button_box{
+width: 100%;
+margin: 20px 0px;
+display: flex;
+position: relative;
+}
+.box2 .button_box .Sign-up_button{
+    width: 50%;
+    padding: 10px 20px;
+    font-size: 25px;
+    font-weight: bold;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    transition: 0.6s;
+
+}
+.box2 .button_box .log-in_button{
+    width: 50%;
+    padding: 10px 20px;
+    font-size: 25px;
+    font-weight: bold;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    transition: 0.6s;
+
+}
+.box2 .button_box .slider_button{
+position: absolute;
+width: 50%;
+height: 100%;
+background: linear-gradient(45deg ,#1645c0 ,#ed21e4);
+z-index: -1;
+border-radius: 5px;
+left: 0;
+}
+
+
+.box2 .form_box{
+    width: 100%;
+    height: 450px;
+    overflow: hidden;
+    position: relative;
+   
+}
+.box2 .form_slider{
+    position: absolute;
+    width: 200%;
+    display: flex;
+    left: 0%;
+    transition: 0.4s;
+   
+
+}
+.box2 .form_box form{
+   width: 100%;
+   margin: 0px 10px;
+  
+}
+.form_box form .input_box{
+width: 100%;
+margin: 30px 0;
+text-align: center;
+position: relative;
+}
+.form_box form .input_box input{
+width: 95%;
+font-size: 15px;
+padding: 8px 0px;
+border-width: 0px 0px 2px 0px;
+outline: none;
+}
+.form_box form .input_box label{
+position: absolute;
+left: 10px;
+top: 10px;
+font-size: 22px;
+pointer-events: none;
+color: #6d6d6d;
+transition: 0.3s;
+}
+.form_box form .input_box input:focus{
+    border-color: rgba(44, 71, 178, 0.85)
+}
+.form_box form .input_box input:valid {
+    border-color: rgba(44, 71, 178, 0.85)
+}
+.form_box form .input_box input:focus + label{
+    top: -10px;
+    font-size: 18px;
+    color: blue;
+}
+.form_box form .input_box input:valid + label{
+    top: -10px;
+    font-size: 18px;
+    color: blue;
+}
+
+.form_box form .link{
+    font-size: 12px;
+    text-align: center;
+    margin: 5px 0;
+}
+.form_box form .link a{
+  color: #1645c0;
+  text-decoration: none;
+  font-weight: bold;
+}
+.form_box form button{
+ width: 100%;
+ padding: 5px 20px;
+ font-size: 20px;
+ border: none;
+ background: linear-gradient(45deg ,#1645c0 ,#ed21e4);
+ color: #fff;
+ font-weight: bold;
+ border-radius: 5px;
+ cursor: pointer;
+ transition: 0.3s;
+}
+
+.form_box button:active{
+    transform: scale3d(0.9,0.9,0.9);
+}
+
+.form_box form .password_link{
+    text-align: right;
+    margin: 20px 0px;
+    font-size: 15px;
+}
+.form_box form .password_link a{
+ text-decoration: none;
+ font-weight: bold;
+ color: #1645c0;
+}
+
+/* footer */
+.footer{
+    background: var(--secondary);
+}
+
+.footer .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(25rem,1fr));
+    gap:1.5rem;
+}
+
+.footer .box-container .box h3{
+    font-size: 2.2rem;
+    padding: 1rem 0;
+    color: var(--primary);
+
+}
+.footer .box-container .box a{
+    font-size: 1.6rem;
+    display: block;
+    color: var(--white);
+    padding: 1rem 0;
+
+}
+.footer .box-container .box a i{
+    color: var(--primary);
+    padding-right: 0.5rem;
+
+}
+.footer .box-container .box a:hover{
+    color: var(--primary);
+
+}
+.footer .share{
+    padding: 2rem;
+    text-align: center;
+}
+.footer .share a{
+    color: var(--primary);
+    font-size: 2rem;
+    width: 5rem;
+    height: 5rem;
+    line-height: 5rem;
+    border-radius: 50%;
+    /* border: 0.1rem solid var(--primary); */
+    margin: 0.3rem;
+}
+.footer .share a :hover{
+color: var(--white);
+background: var(--primary);
+transform: rotate(360deg);
+}
+.footer .credit{
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 2.5rem;
+    padding-top: 2rem;
+    border-top: 0.1rem solid rgba(0, 0, 0, 0.3);
+    color: var(--white);
+}
+.footer .credit span{
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 2.5rem;
+    padding-top: 2rem;
+    border-top: 0.1rem solid rgba(0, 0, 0, 0.3);
+    color: var(--white);
+}

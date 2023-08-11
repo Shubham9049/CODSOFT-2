@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/FrontEnd/log-in/Sign-up.css" />
+    <!-- <link rel="stylesheet" href="style.css" /> -->
+  </head>
+  <body>
+      <!-- navbar -->
+      <header class="header">
+        <a href="" class="logo"><i class="fa-solid fa-location-dot"></i> Safar</a>
+        <nav class="navbar">
+          <a href="/FrontEnd/index.html">Home</a>
+          <a href="/FrontEnd/rooms/rooms.html">room</a>
+          <a href="/FrontEnd/signup.html" class="btn">Log-in/Sign-up</a>
+        </nav>
+        <div id="menu-btn" class="fa-solid fa-bars"></div>
+      </header>
+
+      <div class="main">
+        <div class="box2">
+            <div class="button_box">
+              <div class="slider_button"></div>
+              <button type="button" class="Sign-up_button">Sign-up</button>
+              <button type="button" class="log-in_button">Log-in</button>
+            </div>
+            <div class="form_box">
+              <div class="form_slider">
+                <!-- sign-up -->
+                <form action="#" class="signup_form" id="sign-up">
+                  <div class="input_box">
+                    <input id="name" type="text" required />
+                    <label for="">username</label>
+                  </div>
+                  <div class="input_box">
+                    <input id="email" type="email" required />
+                    <label for="">Email</label>
+                  </div>
+                  <div class="input_box">
+                    <input id="pass" type="text" required />
+                    <label for="">Password</label>
+                  </div>
+                  <div class="input_box">
+                    <input id="phone" type="number" required />
+                    <label for="">Phone</label>
+                  </div>
+                  <button type="submit">create account</button>
+                  <p class="link">
+                    by creating an account you agree to
+                    <a href="#">our terms and condition</a>
+                  </p>
+                </form>
+                <!-- log-in -->
+                <form action="#" class="login_form" id="Log-in">
+                  <div class="input_box">
+                    <input id="useremail" type="email" required />
+                    <label for="">Email</label>
+                  </div>
+                  <div class="input_box">
+                    <input id="userpass" type="text" required />
+                    <label for="">Password</label>
+                  </div>
+      
+                  <p class="password_link"><a href="#">Forget Password ?</a>
+                  </p>
+                  <button type="submit">Log-in</button>
+                </form>
+              </div>
+            </div>
+          </div>
+      </div>
+      
+      
+   
+    <script src="/FrontEnd/log-in/sign-up.js"></script>
+    <script src="/FrontEnd/log-in/log-in.js"></script>
+  </body>
+</html>

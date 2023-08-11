@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="/log-in/Sign-up.css" />
+  </head>
+  <body>
+    <!-- navbar -->
+    <header class="header">
+      <a href="" class="logo"><i class="fa-solid fa-location-dot"></i> Safar</a>
+      <nav class="navbar">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="/FrontEnd/rooms/rooms.html">room</a>
+        <a href="#gallery">gallary</a>
+        <a href="#review">review</a>
+        <a href="/FrontEnd/signup.html" class="btn">Log-in/Sign-up</a>
+      </nav>
+      <div id="menu-btn" class="fa-solid fa-bars"></div>
+    </header>
+    <!-- home -->
+    <section id="home" class="home">
+      <div class="swiper home-slider">
+        <div class="swiper-wrapper">
+          <div
+            class="swiper-slide slide"
+            style="background: url(./images/home-slide1.jpg) no-repeat"
+          >
+            <div class="content">
+              <h3>Don't watch life go by – get out there and live it!</h3>
+              <a href="#" class="btn">Visit now</a>
+            </div>
+          </div>
+          <div
+            class="swiper-slide slide"
+            style="background: url(./images/home-slide2.jpg) no-repeat"
+          >
+            <div class="content">
+              <h3>A vacation where the wheels never touch down</h3>
+              <a href="#" class="btn">Visit now</a>
+            </div>
+          </div>
+          <div
+            class="swiper-slide slide"
+            style="background: url(./images/home-slide3.jpg) no-repeat"
+          >
+            <div class="content">
+              <h3>Spreading smiles across the globe</h3>
+              <a href="#" class="btn">Visit now</a>
+            </div>
+          </div>
+          <div
+            class="swiper-slide slide"
+            style="background: url(./images/home-slide4.jpg) no-repeat"
+          >
+            <div class="content">
+              <h3>Traveling opens door to creating memories</h3>
+              <a href="#" class="btn">Visit now</a>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+    </section>
+
+    <!-- Log-in/ Sing-up -->
+    
+
+    <!-- availability -->
+    <section class="availabilty">
+      <form action="">
+        <div class="box">
+          <p>Check in <span>*</span></p>
+          <input type="date" class="input" />
+        </div>
+        <div class="box">
+          <p>Check out <span>*</span></p>
+          <input type="date" class="input" />
+        </div>
+
+        <div class="box">
+          <p>adults <span>*</span></p>
+          <select name="adults" id="" class="input">
+            <option value="1">1 adults</option>
+            <option value="2">2 adults</option>
+            <option value="3">3 adults</option>
+            <option value="4">4 adults</option>
+            <option value="5">5 adults</option>
+            <option value="6">6 adults</option>
+          </select>
+        </div>
+        <div class="box">
+          <p>children<span>*</span></p>
+          <select name="children" id="" class="input">
+            <option value="1">1 child</option>
+            <option value="2">2 child</option>
+            <option value="3">3 child</option>
+            <option value="4">4 child</option>
+            <option value="5">5 child</option>
+            <option value="6">6 child</option>
+          </select>
+        </div>
+        <div class="box">
+          <p>rooms<span>*</span></p>
+          <select name="rooms" id="" class="input">
+            <option value="1">1 rooms</option>
+            <option value="2">2 rooms</option>
+            <option value="3">3 rooms</option>
+            <option value="4">4 rooms</option>
+            <option value="5">5 rooms</option>
+            <option value="6">6 rooms</option>
+          </select>
+        </div>
+
+        <input type="submit" value="check availability" class="btn" />
+      </form>
+    </section>
+
+    <!-- about -->
+    <section class="about" id="about">
+      <div class="row">
+        <div class="image">
+          <img src="./images/about.jpg" alt="eroor image" />
+        </div>
+        <div class="content">
+          <h3>about Us</h3>
+          <p>
+            <b>Safar</b> is India’s leading online travel booking brand
+            providing range of choice for hotels, flights, trains, bus and cars
+            for travelers. Our core value differentiator is the most trusted
+            user experience, be it in terms of quickest search and booking,
+            fastest payments, settlement or refund processes. Through GoStays,
+            our customers enjoy standardised stay experience at certified hotel
+            properties. With industry first virtual travel booking currency
+            GoCash and travel social network, GoCash+ Rewards – GoIbibo is the
+            number one choice for new India on the move.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- rooms -->
+    <section id="room" class="room">
+      <h1 class="heading">our room</h1>
+      <div class="swiper room-slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide slide">
+            <div class="image">
+              <span class="price">$15.99/night</span>
+              <img src="/FrontEnd/images/room-1.jpg" alt="error image" />
+              <a href="#" class="fa-solid fa-cart-arrow-down"></a>
+            </div>
+            <div class="content">
+              <h3>exclusive room</h3>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+              <div class="star">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-alt"></i>
+              </div>
+              <a href="#" class="btn">book now</a>
+            </div>
+          </div>
+          <div class="swiper-slide slide">
+            <div class="image">
+              <span class="price">$15.99/night</span>
+              <img src="/FrontEnd/images/room-2.jpg" alt="error image" />
+              <a href="#" class="fa-solid fa-cart-arrow-down"></a>
+            </div>
+            <div class="content">
+              <h3>exclusive room</h3>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+              <div class="star">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-alt"></i>
+              </div>
+              <a href="#" class="btn">book now</a>
+            </div>
+          </div>
+          <div class="swiper-slide slide">
+            <div class="image">
+              <span class="price">$15.99/night</span>
+              <img src="/FrontEnd/images/room-3.jpg" alt="error image" />
+              <a href="#" class="fa-solid fa-cart-arrow-down"></a>
+            </div>
+            <div class="content">
+              <h3>exclusive room</h3>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+              <div class="star">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-alt"></i>
+              </div>
+              <a href="#" class="btn">book now</a>
+            </div>
+          </div>
+          <div class="swiper-slide slide">
+            <div class="image">
+              <span class="price">$15.99/night</span>
+              <img src="/FrontEnd/images/room-4.jpg" alt="error image" />
+              <a href="#" class="fa-solid fa-cart-arrow-down"></a>
+            </div>
+            <div class="content">
+              <h3>exclusive room</h3>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+              <div class="star">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-alt"></i>
+              </div>
+              <a href="#" class="btn">book now</a>
+            </div>
+          </div>
+          <div class="swiper-slide slide">
+            <div class="image">
+              <span class="price">$15.99/night</span>
+              <img src="/FrontEnd/images/room-5.jpg" alt="error image" />
+              <a href="#" class="fa-solid fa-cart-arrow-down"></a>
+            </div>
+            <div class="content">
+              <h3>exclusive room</h3>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+              <div class="star">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-alt"></i>
+              </div>
+              <a href="#" class="btn">book now</a>
+            </div>
+          </div>
+          <div class="swiper-slide slide">
+            <div class="image">
+              <span class="price">$15.99/night</span>
+              <img src="/FrontEnd/images/room-6.jpg" alt="error image" />
+              <a href="#" class="fa-solid fa-cart-arrow-down"></a>
+            </div>
+            <div class="content">
+              <h3>exclusive room</h3>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+              <div class="star">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-alt"></i>
+              </div>
+              <a href="#" class="btn">book now</a>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+
+    <!-- services -->
+    <section class="services">
+      <div class="box-container">
+        <div class="box">
+          <img src="/FrontEnd/images/service1.png" alt="" />
+          <h3>swimming pool</h3>
+        </div>
+        <div class="box">
+          <img src="/FrontEnd/images/service2.png" alt="" />
+          <h3>Food & drink</h3>
+        </div>
+        <div class="box">
+          <img src="/FrontEnd/images/service3.png" alt="" />
+          <h3>restrurent</h3>
+        </div>
+        <div class="box">
+          <img src="/FrontEnd/images/service4.png" alt="" />
+          <h3>fitness</h3>
+        </div>
+        <div class="box">
+          <img src="/FrontEnd/images/service5.png" alt="" />
+          <h3>beauty Spa</h3>
+        </div>
+        <div class="box">
+          <img src="/FrontEnd/images/service6.png" alt="" />
+          <h3>Beach facility</h3>
+        </div>
+      </div>
+    </section>
+
+    <!-- gallery -->
+    <section id="gallery" class="gallery">
+      <h1 class="heading">our gallery</h1>
+      <div class="swiper gallery-slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide slide">
+            <img src="/FrontEnd/images/gallery1.jpg" alt="" />
+            <div class="icon">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+          </div>
+          <div class="swiper-slide slide">
+            <img src="/FrontEnd/images/gallery2.jpg" alt="" />
+            <div class="icon"><i class="fa-solid fa-magnifying-glass"></i></div>
+          </div>
+          <div class="swiper-slide slide">
+            <img src="/FrontEnd/images/gallery3.jpg" alt="" />
+            <div class="icon"><i class="fa-solid fa-magnifying-glass"></i></div>
+          </div>
+          <div class="swiper-slide slide">
+            <img src="/FrontEnd/images/gallery4.jpg" alt="" />
+            <div class="icon"><i class="fa-solid fa-magnifying-glass"></i></div>
+          </div>
+          <div class="swiper-slide slide">
+            <img src="/FrontEnd/images/gallery5.jpg" alt="" />
+            <div class="icon"><i class="fa-solid fa-magnifying-glass"></i></div>
+          </div>
+          <div class="swiper-slide slide">
+            <img src="/FrontEnd/images/gallery6.jpg" alt="" />
+            <div class="icon"><i class="fa-solid fa-magnifying-glass"></i></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- review -->
+
+    <section class="review" id="review">
+      <div class="swiper review-slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide slide">
+            <h2 class="heading">client's review</h2>
+            <i class="fas fa-quote-right"></i>
+            <p>
+              I recently had the pleasure of staying at the Paradise Inn during
+              my vacation, and I must say it was an exceptional experience from
+              start to finish. The moment I stepped into the grand lobby, I was
+              greeted by the warm and friendly staff, who ensured a smooth and
+              swift check-in process.
+            </p>
+            <div class="user">
+              <img src="/FrontEnd/images/pic-1.png" alt="" />
+              <div class="user-info">
+                <h3>michle rose</h3>
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide slide">
+            <h2 class="heading">client's review</h2>
+            <i class="fas fa-quote-right"></i>
+            <p>
+              The room I stayed in was absolutely stunning! It was spacious,
+              elegantly decorated, and had a breathtaking view of the
+              surrounding city. The bed was incredibly comfortable, guaranteeing
+              a peaceful night's sleep after a day of exploring.
+            </p>
+            <div class="user">
+              <img src="/FrontEnd/images/pic-2.png" alt="" />
+              <div class="user-info">
+                <h3>michle rose</h3>
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide slide">
+            <h2 class="heading">client's review</h2>
+            <i class="fas fa-quote-right"></i>
+            <p>
+              One of the highlights of my stay was the hotel's top-notch
+              amenities. The swimming pool and spa area were a true oasis of
+              relaxation, and I indulged myself in their luxurious treatments,
+              leaving me feeling rejuvenated and pampered.
+            </p>
+            <div class="user">
+              <img src="/FrontEnd/images/pic-3.png" alt="" />
+              <div class="user-info">
+                <h3>michle rose</h3>
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide slide">
+            <h2 class="heading">client's review</h2>
+            <i class="fas fa-quote-right"></i>
+            <p>
+              The dining experience at Paradise Inn was equally delightful. The
+              breakfast buffet offered a wide array of delicious options, from
+              continental classics to local delicacies, catering to all tastes.
+              The hotel's restaurant staff were attentive and accommodating,
+              making every meal a delightful experience.
+            </p>
+            <div class="user">
+              <img src="/FrontEnd/images/pic-4.png" alt="" />
+              <div class="user-info">
+                <h3>michle rose</h3>
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide slide">
+            <h2 class="heading">client's review</h2>
+            <i class="fas fa-quote-right"></i>
+            <p>
+              Throughout my stay, the hotel staff went above and beyond to
+              ensure my comfort and satisfaction. Their genuine hospitality and
+              attention to detail truly made me feel like a valued guest.
+            </p>
+            <div class="user">
+              <img src="/FrontEnd/images/pic-5.png" alt="" />
+              <div class="user-info">
+                <h3>michle rose</h3>
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide slide">
+            <h2 class="heading">client's review</h2>
+            <i class="fas fa-quote-right"></i>
+            <p>
+              Overall, my experience at Paradise Inn was nothing short of
+              exceptional. I highly recommend this hotel to anyone looking for a
+              luxurious and memorable stay. I can't wait to return and create
+              more wonderful memories at this fantastic hotel!
+            </p>
+            <div class="user">
+              <img src="/FrontEnd/images/pic-6.png" alt="" />
+              <div class="user-info">
+                <h3>michle rose</h3>
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+
+    <!-- booking -->
+   
+    <!-- <section id="booking" class="booking">
+      <h1 class="heading">book now</h1>
+      <form action="">
+        <div class="container">
+          <div class="box">
+            <p>name <span>*</span></p>
+            <input type="text" class="input" placeholder="Enter your name">
+          </div>
+          <div class="box">
+            <p>email <span>*</span></p>
+            <input type="email" class="input" placeholder="Enter your email">
+          </div>
+          <div class="box">
+            <p>check in <span>*</span></p>
+            <input type="date" class="input">
+          </div>
+          <div class="box">
+            <p>check out <span>*</span></p>
+            <input type="date" class="input">
+          </div>
+          <div class="box">
+            <p>adults <span>*</span></p>
+            <select name="adults" class="input">
+              <option value="1">1 adults</option>
+              <option value="2">2 adults</option>
+              <option value="3">3 adults</option>
+              <option value="4">4 adults</option>
+              <option value="5">5 adults</option>
+              <option value="6">6 adults</option>
+            </select>
+          </div>
+          <div class="box">
+            <p>children <span>*</span></p>
+            <select name="child" class="input">
+              <option value="1">1 child</option>
+              <option value="2">2 child</option>
+              <option value="3">3 child</option>
+              <option value="4">4 child</option>
+              <option value="5">5 child</option>
+              <option value="6">6 child</option>
+            </select>
+          </div>
+          <div class="box">
+            <p>rooms <span>*</span></p>
+            <select name="rooms" class="input">
+              <option value="1">1 rooms</option>
+              <option value="2">2 rooms</option>
+              <option value="3">3 rooms</option>
+              <option value="4">4 rooms</option>
+              <option value="5">5 rooms</option>
+              <option value="6">6 rooms</option>
+            </select>
+          </div>
+          <div class="box">
+            <p>room type <span>*</span></p>
+            <select name="type" class="input">
+              <option value="1">exclusive rooms</option>
+              <option value="2">family rooms</option>
+              <option value="3">panaromic rooms</option>
+              <option value="4">daily rooms</option>
+            </select>
+          </div>
+        </div>
+        <input type="submit" value="check availability" class="btn">
+      </form>
+     
+
+    </section> -->
+
+   <!-- footer -->
+   <section class="footer">
+    <div class="box-container">
+      <div class="box">
+        <h3>contact info</h3>
+        <a href="#"><i class="fa-solid fa-phone">+91-9914173314</i></a>
+        <a href="#"><i class="fa-solid fa-phone">+91-9914173314</i></a>
+        <a href="#"><i class="fa-solid fa-envelope"></i>shubham@gmail.com</i></a>
+        <a href="#"><i class="fa-solid fa-map"></i>delhi.India</i></a>
+      </div>
+      <div class="box">
+        <a href="#home"><i class="fa-solid fa-arrow-right-long"></i>home</a>
+        <a href="#about"><i class="fa-solid fa-arrow-right-long"></i>about</a>
+        <a href="#room"><i class="fa-solid fa-arrow-right-long"></i>rooms</a>
+        <a href="#gallary"><i class="fa-solid fa-arrow-right-long"></i>gallery</a>
+        <a href="#booking"><i class="fa-solid fa-arrow-right-long"></i>booking</a>
+        <a href="#"><i class="fa-solid fa-arrow-right-long"></i>refund policy</a>
+      </div>
+    </div>
+    <div class="share">
+      <a href="#"><i class="fa-brands fa-facebook"></i></a>
+      <a href="#"><i class="fa-brands fa-instagram"></i></a>
+      <a href="#"><i class="fa-brands fa-twitter"></i></a>
+    </div>
+    <div class="credit">&copy; copyright @ 2023 by <span>Safar</span></div>
+   </section>
+    
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="/FrontEnd/log-in/sign-up.js"></script>
+    <script src="/FrontEnd/script.js"></script>
+  </body>
+</html>

@@ -1,16 +1,16 @@
 const token = localStorage.getItem("token") || null
 const storedname=localStorage.getItem("userName") || null
 const loginBtn=document.getElementById("login")
-const logout=document.getElementById("logout")
+// const logout=document.getElementById("logout")
 
 if(storedname){
-    loginBtn.textContent=` ${storedname}`
+    loginBtn.innerHTML=`<i class="fa-solid fa-user"></i> ${storedname.split(' ')[0]}/Log-out`
 }else {
     // loginBtn.innerHTML == ''
     loginBtn.textContent == 'Login/Signup'
 }
 
-logout.addEventListener("click",()=>{
+loginBtn.addEventListener("click",()=>{
    localStorage.clear()
    window.location="index.html";
 })

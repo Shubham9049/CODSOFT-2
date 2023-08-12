@@ -3,6 +3,7 @@ const LogInForm=document.getElementById("Log-in")
 
 
 
+
 LogInForm.addEventListener("submit",(e)=>{
     e.preventDefault()
     let obj={
@@ -24,10 +25,11 @@ LogInForm.addEventListener("submit",(e)=>{
         localStorage.setItem("userName",res.user.userName)
         localStorage.setItem("token",res.token)
         if(res.status){
-            alert("Login Successfully")
+            // alert('Login Successfully')
+            Swal.fire('Login Successfully')
             setTimeout(() => {
                 redirect()
-            }, 1000);
+            }, 1500);
         }else{
             alert(`Invalid Credentials`)
         }
@@ -35,7 +37,7 @@ LogInForm.addEventListener("submit",(e)=>{
 
 
     })
-    .catch(err => console.log(err.message))
+    .catch(err => Swal.fire(`Invalid Credentials`))
 })
 
 

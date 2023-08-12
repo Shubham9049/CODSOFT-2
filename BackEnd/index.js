@@ -1,6 +1,7 @@
 const express = require("express");
 const { connectDB } = require("./config/db");
 const { UserRoutes } = require("./routes/user.routes");
+const{bookingRoutes}=require("./routes/booking.routes")
 const cors = require("cors");
 
 require("dotenv").config();
@@ -11,6 +12,7 @@ app.use(express.json());
 
 //User Route or creating end point
 app.use("/user", UserRoutes);
+app.use("/booking",bookingRoutes)
 
 app.listen(PORT, async () => {
   try {

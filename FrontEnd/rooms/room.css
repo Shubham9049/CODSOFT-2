@@ -118,7 +118,7 @@ background-color: var(--secondary);
 /* navbar :end */
 .container{
     width: 100%;
-    margin-top: 40px;
+    margin-top: 60px;
     
 }
 .wrapper{
@@ -210,6 +210,10 @@ button{
     padding: 10px 15px;
     box-sizing: border-box;
     cursor: pointer;
+}
+.date label{
+    font-weight: bold;
+    margin: 2px 2px;
 }
 
 @media only screen and (max-width:1200px){

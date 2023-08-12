@@ -1,6 +1,5 @@
 let menu = document.querySelector('#menu-btn');
 let navbar = document.querySelector('.header .navbar');
-
 const storedname=localStorage.getItem("userName")
 const loginBtn=document.getElementById("login")
 

@@ -1,10 +1,12 @@
+const BaseUrl="http://localhost:4000"
 const token = localStorage.getItem("token") || null
 const storedname=localStorage.getItem("userName") || null
 const loginBtn=document.getElementById("login")
 // const logout=document.getElementById("logout")
+const content=document.querySelectorAll(".content")
 
 if(storedname){
-    loginBtn.innerHTML=`<i class="fa-solid fa-user"></i> ${storedname.split(' ')[0]}/Log-out`
+    loginBtn.innerHTML=`<i class="fa-solid fa-user"></i>  ${storedname.split(' ')[0]}/Log-out`
 }else {
     // loginBtn.innerHTML == ''
     loginBtn.textContent == 'Login/Signup'
@@ -41,3 +43,25 @@ bookBtnArr.forEach(bookBtn => {
     })
 });
 
+// content.addEventListener("submit",(e)=>{
+//    e.preventDefault();
+//    let obj={
+//       name: document.querySelectorAll(".name").value,
+//       adults:document.querySelectorAll(".Adults").value,
+//       childrens:document.querySelectorAll(".childrens").value,
+//       checkIn:document.querySelectorAll(".check-in").value,
+//       checkOut:document.querySelectorAll(".check-out").value
+
+//    }
+//    fetch(`${BaseUrl}/booking/add`,{
+//       method:"POST",
+//       headers:{
+//          "Content-Type":"application/json",
+//       }
+//       ,body : JSON.stringify(obj),
+//    })
+//    .then(res=>res.json())
+//    .then((res)=>{
+//       Swal.fire('Booking Successfully')
+//    })
+// })

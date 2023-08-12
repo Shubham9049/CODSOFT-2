@@ -43,7 +43,7 @@
             <div class="text">
               <div class="content">
                 <p class="brand">Safar Rooms</p>
-                <h2>Flagship Suite</h2>
+                <h2 class="name">Flagship Suite</h2>
                 <div class="review1">
                   <span>4.6</span>
                   <span class="fa fa-star"></span>
@@ -52,14 +52,14 @@
                   <p class="price">&#8377; 1600/Per-Night</p>
                   <!-- <strike>&#8377; 2200/Per-Night</strike> -->
                 </div>
-                <p>Adults : <select name="Adults" id="">
+                <p>Adults : <select class="Adults" name="Adults" id="">
                   <option value="1">1</option>
                   <option value="2">2</option>
                   <option value="3">3</option>
                   <option value="4">4</option>
                   <option value="5">5</option>
                 </select></p>
-                <p>childrens : <select name="childrens" id="">
+                <p>childrens : <select class="childrens" name="childrens" id="">
                   <option value="1">1</option>
                   <option value="2">2</option>
                   <option value="3">3</option>
@@ -68,12 +68,12 @@
                 </select></p>
                 <div class="date">
                   <label for="">check-in :</label>
-                    <input type="date"><br>
+                    <input class="check-in" type="date"><br>
                     <label for="">check-out :</label>
-                    <input type="date">
+                    <input class="check-out" type="date">
                   </div>
                 <p>With its easy accessibility to many key attractions, OYO Flagship 29680 Aviraj in Lucknow offers you the best services, experience and comfort at affordable rates.The property is well maintained by a trained and skillful staff </p>
-                <button class="bookBtn"> <span class="fa fa-shopping-cart"></span> Book now</button>
+                <button type="submit" class="bookBtn"> <span class="fa fa-shopping-cart"></span> Book now</button>
               </div>
             </div>
         </div>
@@ -217,5 +217,6 @@
 <script src="/FrontEnd/AfterLogin/LoginedRoom.js"></script>
 <script src="/FrontEnd/script.js"></script>
 <script src="https://kit.fontawesome.com/db912bbc14.js" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
 </html>

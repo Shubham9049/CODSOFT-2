@@ -3,7 +3,9 @@ const token = localStorage.getItem("token") || null
 const storedname=localStorage.getItem("userName") || null
 const loginBtn=document.getElementById("login")
 // const logout=document.getElementById("logout")
-const content=document.querySelectorAll(".content")
+
+
+
 
 if(storedname){
     loginBtn.innerHTML=`<i class="fa-solid fa-user"></i>  ${storedname.split(' ')[0]}/Log-out`
@@ -30,38 +32,44 @@ function clickimg3(smallImg){
    fullimg.src=smallImg.src
 }
 
-const bookBtnArr = document.querySelectorAll(".bookBtn")
+// const bookBtnArr = document.querySelectorAll(".bookBtn")
 
-bookBtnArr.forEach(bookBtn => {
-   bookBtn.addEventListener("click" , () => {
-      if(!token){
-       return alert("You are not Logged In. Please Log In...")
-      }else{
-       // nextcode
-       alert("Next")
-      }
-    })
-});
-
-// content.addEventListener("submit",(e)=>{
-//    e.preventDefault();
-//    let obj={
-//       name: document.querySelectorAll(".name").value,
-//       adults:document.querySelectorAll(".Adults").value,
-//       childrens:document.querySelectorAll(".childrens").value,
-//       checkIn:document.querySelectorAll(".check-in").value,
-//       checkOut:document.querySelectorAll(".check-out").value
-
-//    }
-//    fetch(`${BaseUrl}/booking/add`,{
-//       method:"POST",
-//       headers:{
-//          "Content-Type":"application/json",
+// bookBtnArr.forEach(bookBtn => {
+//    bookBtn.addEventListener("click" , () => {
+//       if(!token){
+//        return alert("You are not Logged In. Please Log In...")
+//       }else{
+//        // nextcode
+//        alert("next")
+       
 //       }
-//       ,body : JSON.stringify(obj),
-//    })
-//    .then(res=>res.json())
-//    .then((res)=>{
-//       Swal.fire('Booking Successfully')
-//    })
-// })
+//     })
+// });
+
+
+// booking form
+const bookBtn1=document.getElementById("bookBtn1")
+const bookBtn2=document.getElementById("bookBtn2")
+const bookBtn3=document.getElementById("bookBtn3")
+const closebtn =document.getElementById("closebtn")
+const center=document.querySelector(".center")
+
+bookBtn1.addEventListener("click",()=>{
+   open()
+})
+bookBtn2.addEventListener("click",()=>{
+   open()
+})
+bookBtn3.addEventListener("click",()=>{
+   open()
+})
+closebtn.addEventListener("click",()=>{
+   close()
+})
+
+function open() {
+center.classList.remove("hidden")
+}
+function close() {
+center.classList.add("hidden")
+}

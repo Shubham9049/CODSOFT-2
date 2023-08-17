@@ -1,0 +1,69 @@
+
+
+.cont{
+    position: fixed;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50% ,-50%);
+    background: #fff;
+    width: 410px;
+    padding: 30px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+    transition: 0.5ms;
+}
+.hidden{
+    display: none;
+}
+.cont .text{
+    font-size:30px;
+    font-weight: 600;
+    text-align: center;
+}
+.cont form{
+margin-top: 15px;
+}
+.cont form .info{
+height: 45px;
+width: 100%;
+margin: 30px 0;
+}
+form .info label{
+    font-size: 18px;
+}
+form .info select ,input{
+height: 100%;
+width: 100%;
+padding-left: 10px;
+font-size: 17px;
+border: 1px solid lightgrey;
+border-radius: 5px;
+}
+form .info select ,input:focus{
+border-color: #3498db;
+border-bottom-width: 2px;
+}
+form .btn-book{
+    margin: 30px 0;
+    height: 45px;
+    width: 100%;
+}
+form .btn-book.inner{
+    height: 60%;
+}
+#btnsubmit{
+    width: 100%;
+    height: 8vh;
+    border-radius: 8px;
+}
+.close-btn{
+    font-size: 22px;
+    float: right;
+}
+.close-btn:hover{
+    color: #3498db;
+}
+/* .show-btn{
+    width: 20px;
+    border: 2px solid black;
+    padding: 5px 5px ;
+} */

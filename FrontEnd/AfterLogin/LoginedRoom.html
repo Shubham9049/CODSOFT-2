@@ -10,6 +10,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
     />
     <link rel="stylesheet" href="/FrontEnd/rooms/room.css">
+    <link rel="stylesheet" href="/FrontEnd/AfterLogin/model.css">
 </head>
 <body>
     <header class="header">
@@ -41,6 +42,7 @@
               </div>
             </div>
             <div class="text">
+              
               <div class="content">
                 <p class="brand">Safar Rooms</p>
                 <h2 class="name">Flagship Suite</h2>
@@ -52,28 +54,28 @@
                   <p class="price">&#8377; 1600/Per-Night</p>
                   <!-- <strike>&#8377; 2200/Per-Night</strike> -->
                 </div>
-                <p>Adults : <select class="Adults" name="Adults" id="">
+                <!-- <p>Adults : <select class="Adults" name="Adults" id="">
                   <option value="1">1</option>
                   <option value="2">2</option>
                   <option value="3">3</option>
                   <option value="4">4</option>
                   <option value="5">5</option>
-                </select></p>
-                <p>childrens : <select class="childrens" name="childrens" id="">
+                </select></p> -->
+                <!-- <p>childrens : <select class="childrens" name="childrens" id="">
                   <option value="1">1</option>
                   <option value="2">2</option>
                   <option value="3">3</option>
                   <option value="4">4</option>
                   <option value="5">5</option>
-                </select></p>
-                <div class="date">
+                </select></p> -->
+                <!-- <div class="date">
                   <label for="">check-in :</label>
                     <input class="check-in" type="date"><br>
                     <label for="">check-out :</label>
                     <input class="check-out" type="date">
-                  </div>
+                  </div> -->
                 <p>With its easy accessibility to many key attractions, OYO Flagship 29680 Aviraj in Lucknow offers you the best services, experience and comfort at affordable rates.The property is well maintained by a trained and skillful staff </p>
-                <button type="submit" class="bookBtn"> <span class="fa fa-shopping-cart"></span> Book now</button>
+                <button  id="bookBtn1"> <span class="fa fa-shopping-cart"></span> Book now</button>
               </div>
             </div>
         </div>
@@ -106,28 +108,28 @@
                   <p class="price">&#8377; 3900/Per-Night</p>
                   <!-- <strike>&#8377; 2200/Per-Night</strike> -->
                 </div>
-                <p>Adults : <select name="Adults" id="">
+                <!-- <p>Adults : <select name="Adults" id="">
                   <option value="1">1</option>
                   <option value="2">2</option>
                   <option value="3">3</option>
                   <option value="4">4</option>
                   <option value="5">5</option>
-                </select></p>
-                <p>childrens : <select name="childrens" id="">
+                </select></p> -->
+                <!-- <p>childrens : <select name="childrens" id="">
                   <option value="1">1</option>
                   <option value="2">2</option>
                   <option value="3">3</option>
                   <option value="4">4</option>
                   <option value="5">5</option>
-                </select></p>
-                <div class="date">
+                </select></p> -->
+                <!-- <div class="date">
                   <label for="">check-in :</label>
                     <input type="date"><br>
                     <label for="">check-out :</label>
                     <input type="date">
-                  </div>
+                  </div> -->
                 <p>With its easy accessibility to many key attractions, OYO Flagship 29680 Aviraj in Lucknow offers you the best services, experience and comfort at affordable rates.The property is well maintained by a trained and skillful OYO staff who ensure all your needs are catered to. The property offers AC, clean linen and much more</p>
-                <button class="bookBtn"> <span class="fa fa-shopping-cart"></span> Book now</button>
+                <button id="bookBtn2"> <span class="fa fa-shopping-cart"></span> Book now</button>
               </div>
             </div>
         </div>
@@ -160,28 +162,28 @@
                   <p class="price">&#8377; 7900/Per-Night</p>
                   <!-- <strike>&#8377; 2200/Per-Night</strike> -->
                 </div>
-                <p>Adults : <select name="Adults" id="">
+                <!-- <p>Adults : <select name="Adults" id="">
                   <option value="1">1</option>
                   <option value="2">2</option>
                   <option value="3">3</option>
                   <option value="4">4</option>
                   <option value="5">5</option>
-                </select></p>
-                <p>childrens : <select name="childrens" id="">
+                </select></p> -->
+                <!-- <p>childrens : <select name="childrens" id="">
                   <option value="1">1</option>
                   <option value="2">2</option>
                   <option value="3">3</option>
                   <option value="4">4</option>
                   <option value="5">5</option>
-                </select></p>
-                <div class="date">
+                </select></p> -->
+                <!-- <div class="date">
                 <label for="">check-in :</label>
                   <input type="date"><br>
                   <label for="">check-out :</label>
                   <input type="date">
-                </div>
+                </div> -->
                 <p>With its easy accessibility to many key attractions, OYO Flagship 29680 Aviraj in Lucknow offers you the best services, experience and comfort at affordable rates.The property is well maintained by a trained and skillful OYO staff who ensure all your needs are catered to. The property offers AC, clean linen and much more</p>
-                <button class="bookBtn"> <span class="fa fa-shopping-cart"></span> Book now</button>
+                <button id="bookBtn3"> <span class="fa fa-shopping-cart"></span> Book now</button>
               </div>
             </div>
         </div>
@@ -213,6 +215,59 @@
         </div>
         <div class="credit">&copy; copyright @ 2023 by <span>Safar</span></div>
        </section>
+       <div class="center hidden">
+        <div class="cont">
+            <label for="" class="close-btn fas fa-times " id="closebtn"></label>
+            <div class="text">Safar Booking</div>
+            <form action="#">
+              <div class="info">
+                <label for="">Select Suite</label>
+                <select id="" name="" required>
+                    <option value="">select</option>
+                    <option value="">Flagship</option>
+                    <option value="">Executive</option>
+                    <option value="">Delux</option>
+                </select>
+              </div>
+              <div class="info">
+                <label for="">Adults</label>
+                <select name="Adults" id="" required>
+                    <option value="">select</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                  </select>
+                </select>
+              </div>
+              <div class="info">
+                <label for="">Adults</label>
+                <select name="childrens" id="">
+                    <option value="">select</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                  </select>
+              </div>
+              <div class="info">
+                <label for="">check-in :</label>
+                    <input type="date" required>
+              </div>
+              <div class="info">
+                <label for="">check-out :</label>
+                    <input type="date" required>
+              </div>
+              <div class="btn-book">
+                <div class="inner"></div>
+                <button id="btnsubmit" type="submit">Book Now</button>
+              </div>
+
+            </form>
+        </div>
+    </div>
 
 <script src="/FrontEnd/AfterLogin/LoginedRoom.js"></script>
 <script src="/FrontEnd/script.js"></script>

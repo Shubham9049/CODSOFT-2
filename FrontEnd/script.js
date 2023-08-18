@@ -1,26 +1,8 @@
 let menu = document.querySelector('#menu-btn');
 let navbar = document.querySelector('.header .navbar');
-const storedname=localStorage.getItem("userName")
+// const storedname=localStorage.getItem("userName") || null
 const loginBtn=document.getElementById("login")
 
-if(storedname){
-    loginBtn.innerHTML=` ${userName} / Logout`
-}else {
-    // loginBtn.innerHTML == ''
-    loginBtn.innerText == 'Login/Signup'
-}
-
-
-
-menu.onclick = () => {
-    menu.classList.toggle('fa-times');
-    navbar.classList.toggle('active');
-}
-
-window.onscroll = () => {
-    menu.classList.remove('fa-times');
-    navbar.classList.remove('active');
-}
 
 var swiper = new Swiper(".home-slider", {
     grabCursor :true,
@@ -96,3 +78,22 @@ var swiper = new Swiper(".review-slider", {
       },
       
 });
+
+// if(storedname){
+//     loginBtn.innerHTML=`<i class="fa-solid fa-user"></i>  ${storedname.split(' ')[0]}/Log-out`
+// }else {
+//     // loginBtn.innerHTML == ''
+//     loginBtn.textContent == 'Login/Signup'
+// }
+
+
+
+menu.onclick = () => {
+    menu.classList.toggle('fa-times');
+    navbar.classList.toggle('active');
+}
+
+window.onscroll = () => {
+    menu.classList.remove('fa-times');
+    navbar.classList.remove('active');
+}

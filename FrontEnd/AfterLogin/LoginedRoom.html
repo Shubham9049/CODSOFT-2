@@ -215,23 +215,24 @@
         </div>
         <div class="credit">&copy; copyright @ 2023 by <span>Safar</span></div>
        </section>
+       <!-- booking form start here -->
        <div class="center hidden">
         <div class="cont">
             <label for="" class="close-btn fas fa-times " id="closebtn"></label>
             <div class="text">Safar Booking</div>
-            <form action="#">
+            <form action="#" id="booknow">
               <div class="info">
                 <label for="">Select Suite</label>
-                <select id="" name="" required>
+                <select  name="Suite" id="Suite" required>
                     <option value="">select</option>
-                    <option value="">Flagship</option>
-                    <option value="">Executive</option>
-                    <option value="">Delux</option>
+                    <option name="Flagship"  value="Flagship Suite">Flagship Suite</option>
+                    <option name="Executive"  value="Executive Suite">Executive Suite</option>
+                    <option name="Delux"  value="Delux Suite">Delux Suite</option>
                 </select>
               </div>
               <div class="info">
                 <label for="">Adults</label>
-                <select name="Adults" id="" required>
+                <select name="Adults" id="adults" required>
                     <option value="">select</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
@@ -242,8 +243,8 @@
                 </select>
               </div>
               <div class="info">
-                <label for="">Adults</label>
-                <select name="childrens" id="">
+                <label for="">childrens</label>
+                <select name="childrens" id="childrens">
                     <option value="">select</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
@@ -254,11 +255,11 @@
               </div>
               <div class="info">
                 <label for="">check-in :</label>
-                    <input type="date" required>
+                    <input id="check-in" type="date" required>
               </div>
               <div class="info">
                 <label for="">check-out :</label>
-                    <input type="date" required>
+                    <input id="check-out" type="date" required>
               </div>
               <div class="btn-book">
                 <div class="inner"></div>
@@ -268,10 +269,11 @@
             </form>
         </div>
     </div>
-
+    <script src="/FrontEnd/AfterLogin/bookingForm.js"></script>
 <script src="/FrontEnd/AfterLogin/LoginedRoom.js"></script>
 <script src="/FrontEnd/script.js"></script>
 <script src="https://kit.fontawesome.com/db912bbc14.js" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="/FrontEnd/AfterLogin/bookingForm.js"></script>
 </body>
 </html>

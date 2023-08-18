@@ -1,10 +1,8 @@
-const BaseUrl="http://localhost:4000"
+
 const token = localStorage.getItem("token") || null
 const storedname=localStorage.getItem("userName") || null
 const loginBtn=document.getElementById("login")
 // const logout=document.getElementById("logout")
-
-
 
 
 if(storedname){
@@ -32,21 +30,6 @@ function clickimg3(smallImg){
    fullimg.src=smallImg.src
 }
 
-// const bookBtnArr = document.querySelectorAll(".bookBtn")
-
-// bookBtnArr.forEach(bookBtn => {
-//    bookBtn.addEventListener("click" , () => {
-//       if(!token){
-//        return alert("You are not Logged In. Please Log In...")
-//       }else{
-//        // nextcode
-//        alert("next")
-       
-//       }
-//     })
-// });
-
-
 // booking form
 const bookBtn1=document.getElementById("bookBtn1")
 const bookBtn2=document.getElementById("bookBtn2")
@@ -73,3 +56,5 @@ center.classList.remove("hidden")
 function close() {
 center.classList.add("hidden")
 }
+
+

@@ -15,9 +15,9 @@ UserRoutes.get("/",async(req,res)=>{
 // signup
 UserRoutes.post("/signup",async(req,res)=>{
     try {
-        const{name,email,password,phone}=req.body
+        const{name,email,password,phone,role}=req.body
         const hashedPass=bcrypt.hashSync(password,5)
-        const singupdata=new UserModel({name,email,password:hashedPass,phone})
+        const singupdata=new UserModel({name,email,password:hashedPass,phone,role})
         await singupdata.save();
         res.status(200).send({msg:"SignUp Successfully"})
     } catch (error) {
@@ -29,7 +29,7 @@ UserRoutes.post("/login",async(req,res)=>{
     try {
         const{email,password}=req.body
         const loginUser= await UserModel.findOne({email})
-        if(loginUser){
+       if(loginUser){
            const isEqual=bcrypt.compareSync(password,loginUser.password)
            if(isEqual){
             res.status(200).send({
@@ -39,7 +39,8 @@ UserRoutes.post("/login",async(req,res)=>{
                 user : {
                     userName: loginUser.name,
                     email : loginUser.email,
-                    phone : loginUser.phone
+                    phone : loginUser.phone,
+                    role  : loginUser.role
                 }
             })
            }else{

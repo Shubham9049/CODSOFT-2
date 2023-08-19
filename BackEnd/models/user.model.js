@@ -17,6 +17,10 @@ const userSchema = mongoose.Schema({
         default:"0",
         minlength:[10,"phone number must be 10 digit"],
         required:true
+    },
+    role:{
+        type:String,
+        default:"user"
     }
 })
 

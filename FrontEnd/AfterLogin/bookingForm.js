@@ -22,10 +22,14 @@ form.addEventListener("submit",(e)=>{
    })
    .then(res=>res.json())
    .then((res)=>{
-      Swal.fire('Booking Successfully')
+     if(res){
+      Swal.fire(res.message)
       setTimeout(() => {
          redirect()
       }, 1000);
+     }else{
+      alert(res.message)
+     }
    })
 })
 

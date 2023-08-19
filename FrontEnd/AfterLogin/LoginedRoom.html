@@ -13,6 +13,61 @@
     <link rel="stylesheet" href="/FrontEnd/AfterLogin/model.css">
 </head>
 <body>
+
+  <!-- booking form start here -->
+  <div class="center hidden">
+    <div class="cont">
+        <label for="" class="close-btn fas fa-times " id="closebtn"></label>
+        <div class="text">Safar Booking</div>
+        <form action="#" id="booknow">
+          <div class="info">
+            <label for="">Select Suite</label>
+            <select  name="Suite" id="Suite" required>
+                <option value="">select</option>
+                <option name="Flagship"  value="Flagship Suite">Flagship Suite</option>
+                <option name="Executive"  value="Executive Suite">Executive Suite</option>
+                <option name="Delux"  value="Delux Suite">Delux Suite</option>
+            </select>
+          </div>
+          <div class="info">
+            <label for="">Adults</label>
+            <select name="Adults" id="adults" required>
+                <option value="">select</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+              </select>
+            </select>
+          </div>
+          <div class="info">
+            <label for="">childrens</label>
+            <select name="childrens" id="childrens">
+                <option value="">select</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+              </select>
+          </div>
+          <div class="info">
+            <label for="">check-in :</label>
+                <input id="check-in" type="date" required>
+          </div>
+          <div class="info">
+            <label for="">check-out :</label>
+                <input id="check-out" type="date" required>
+          </div>
+          <div class="btn-book">
+            <div class="inner"></div>
+            <button id="btnsubmit" type="submit">Book Now</button>
+          </div>
+
+        </form>
+    </div>
+</div>
     <header class="header">
         <a href="" class="logo"><i class="fa-solid fa-location-dot"></i> Safar</a>
         <nav class="navbar">
@@ -215,60 +270,7 @@
         </div>
         <div class="credit">&copy; copyright @ 2023 by <span>Safar</span></div>
        </section>
-       <!-- booking form start here -->
-       <div class="center hidden">
-        <div class="cont">
-            <label for="" class="close-btn fas fa-times " id="closebtn"></label>
-            <div class="text">Safar Booking</div>
-            <form action="#" id="booknow">
-              <div class="info">
-                <label for="">Select Suite</label>
-                <select  name="Suite" id="Suite" required>
-                    <option value="">select</option>
-                    <option name="Flagship"  value="Flagship Suite">Flagship Suite</option>
-                    <option name="Executive"  value="Executive Suite">Executive Suite</option>
-                    <option name="Delux"  value="Delux Suite">Delux Suite</option>
-                </select>
-              </div>
-              <div class="info">
-                <label for="">Adults</label>
-                <select name="Adults" id="adults" required>
-                    <option value="">select</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                  </select>
-                </select>
-              </div>
-              <div class="info">
-                <label for="">childrens</label>
-                <select name="childrens" id="childrens">
-                    <option value="">select</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                  </select>
-              </div>
-              <div class="info">
-                <label for="">check-in :</label>
-                    <input id="check-in" type="date" required>
-              </div>
-              <div class="info">
-                <label for="">check-out :</label>
-                    <input id="check-out" type="date" required>
-              </div>
-              <div class="btn-book">
-                <div class="inner"></div>
-                <button id="btnsubmit" type="submit">Book Now</button>
-              </div>
-
-            </form>
-        </div>
-    </div>
+       
     <script src="/FrontEnd/AfterLogin/bookingForm.js"></script>
 <script src="/FrontEnd/AfterLogin/LoginedRoom.js"></script>
 <script src="/FrontEnd/script.js"></script>

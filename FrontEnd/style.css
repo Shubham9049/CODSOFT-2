@@ -48,6 +48,11 @@ section{
     font-weight: bolder;
     margin-bottom: 3rem;
 }
+/* #checkBtn{
+    display: inline-block;
+    width: auto ;
+    height:auto;
+} */
 
 /* nav */
 
@@ -110,6 +115,7 @@ section{
     
 background-color: var(--secondary);
 }
+
 
 .header .navbar .btn{
     margin-top: 0;

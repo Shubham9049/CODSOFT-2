@@ -55,7 +55,7 @@ section{
     top: 0px;
     left: 0px;
     right: 0px;
-    z-index: 1000;
+    z-index: 1;
     background-color:var(--white) ;
     box-shadow: var(--box-shadow);
     display: flex;

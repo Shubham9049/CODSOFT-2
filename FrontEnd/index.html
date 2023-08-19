@@ -79,51 +79,25 @@
 
     <!-- availability -->
     <section class="availabilty">
-      <form action="">
+      <form action="" id="search">
+        <div class="box">
+          <p>rooms<span>*</span></p>
+          <select name="rooms" id="rooms" class="input">
+            <option value="">select</option>
+            <option name="Flagship"  value="Flagship Suite">Flagship Suite</option>
+            <option name="Executive"  value="Executive Suite">Executive Suite</option>
+            <option name="Delux"  value="Delux Suite">Delux Suite</option>
+          </select>
+        </div>
         <div class="box">
           <p>Check in <span>*</span></p>
-          <input type="date" class="input" />
+          <input id="check-in" type="date" class="input" />
         </div>
         <div class="box">
           <p>Check out <span>*</span></p>
-          <input type="date" class="input" />
+          <input id="check-out" type="date" class="input" />
         </div>
-
-        <div class="box">
-          <p>adults <span>*</span></p>
-          <select name="adults" id="" class="input">
-            <option value="1">1 adults</option>
-            <option value="2">2 adults</option>
-            <option value="3">3 adults</option>
-            <option value="4">4 adults</option>
-            <option value="5">5 adults</option>
-            <option value="6">6 adults</option>
-          </select>
-        </div>
-        <div class="box">
-          <p>children<span>*</span></p>
-          <select name="children" id="" class="input">
-            <option value="1">1 child</option>
-            <option value="2">2 child</option>
-            <option value="3">3 child</option>
-            <option value="4">4 child</option>
-            <option value="5">5 child</option>
-            <option value="6">6 child</option>
-          </select>
-        </div>
-        <div class="box">
-          <p>rooms<span>*</span></p>
-          <select name="rooms" id="" class="input">
-            <option value="1">1 rooms</option>
-            <option value="2">2 rooms</option>
-            <option value="3">3 rooms</option>
-            <option value="4">4 rooms</option>
-            <option value="5">5 rooms</option>
-            <option value="6">6 rooms</option>
-          </select>
-        </div>
-
-        <input type="submit" value="check availability" class="btn" />
+        <button type="submit" value="check availability" class="btn" id="checkBtn">Check availability</button>
       </form>
     </section>
 

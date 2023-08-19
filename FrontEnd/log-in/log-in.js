@@ -24,15 +24,20 @@ LogInForm.addEventListener("submit",(e)=>{
         console.log(res)
         localStorage.setItem("userName",res.user.userName)
         localStorage.setItem("token",res.token)
-        if(res.status){
+       if(res.status){
+        if(res.user.role==="admin"){
             // alert('Login Successfully')
+            Swal.fire('welcome admin')
+            location.replace("http://127.0.0.1:5500/FrontEnd/admin/admin.html")
+        }else{
             Swal.fire('Login Successfully')
             setTimeout(() => {
                 redirect()
             }, 1500);
-        }else{
-            alert(`Invalid Credentials`)
         }
+       }else{
+        alert(`Invalid Credentials`)
+    }
 
 
 

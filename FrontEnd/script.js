@@ -1,7 +1,9 @@
+const BaseUrl="http://localhost:4000"
 let menu = document.querySelector('#menu-btn');
 let navbar = document.querySelector('.header .navbar');
 // const storedname=localStorage.getItem("userName") || null
 const loginBtn=document.getElementById("login")
+const serachroom=document.getElementById("search")
 
 
 var swiper = new Swiper(".home-slider", {
@@ -86,7 +88,30 @@ var swiper = new Swiper(".review-slider", {
 //     loginBtn.textContent == 'Login/Signup'
 // }
 
-
+serachroom.addEventListener("submit",(e)=>{
+    e.preventDefault();
+    let obj={
+        name: document.getElementById("rooms").value,
+        checkinDate: document.getElementById("check-in").value,
+        checkoutdate: document.getElementById("check-out").value
+    }
+    console.log(obj)
+    fetch(`${BaseUrl}/booking/searchroom`,{
+        method:"POST",
+        headers:{
+            "Content-Type":"application/json",
+        },
+        body:JSON.stringify(obj)
+    })
+    .then(res=>res.json())
+    .then((res)=>{
+        if(res){
+            alert(res)
+        }else{
+            alert(res.error)
+        }
+    })
+})
 
 menu.onclick = () => {
     menu.classList.toggle('fa-times');

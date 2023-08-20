@@ -39,5 +39,5 @@ bookBtnArr.forEach(bookBtn => {
 });
 
 function redirected() {
-   location.replace("http://127.0.0.1:5500/FrontEnd/signup.html")
+   location.replace("/FrontEnd/log-in/signup.html")
  }

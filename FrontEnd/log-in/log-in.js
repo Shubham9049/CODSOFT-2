@@ -30,7 +30,7 @@ LogInForm.addEventListener("submit",(e)=>{
             Swal.fire('welcome admin')
             setTimeout(()=>{
                 // window.location=`E:\CODSOFT-2\FrontEnd\admin\admin.html`
-                location.replace("http://127.0.0.1:5500/FrontEnd/admin/admin.html")
+                location.replace("/FrontEnd/admin/admin.html")
             },2000)
             
         }else{
@@ -51,5 +51,5 @@ LogInForm.addEventListener("submit",(e)=>{
 
 
 function redirect() {
-    location.replace("http://127.0.0.1:5500/FrontEnd/AfterLogin/LoginedRoom.html")
+    location.replace("/FrontEnd/AfterLogin/LoginedRoom.html")
   }

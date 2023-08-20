@@ -35,6 +35,6 @@ form.addEventListener("submit",(e)=>{
 
 function redirect() {
    // localStorage.clear()
-   location.replace("/FrontEnd/AfterLogin/LoginedRoom.html")
+   location.replace("./LoginedRoom.html")
  }
  

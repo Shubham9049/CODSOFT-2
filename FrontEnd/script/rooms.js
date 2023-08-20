@@ -1,13 +1,4 @@
 const token = localStorage.getItem("token") || null
-// const storedname=localStorage.getItem("userName") || null
-// const loginBtn=document.getElementById("login")
-
-// if(storedname){
-//     loginBtn.textContent=` ${storedname} / Logout`
-// }else {
-//     // loginBtn.innerHTML == ''
-//     loginBtn.textContent == 'Login/Signup'
-// }
 
 function clickimg(smallImg){
    let fullimg= document.getElementById("imagebox") 
@@ -39,5 +30,5 @@ bookBtnArr.forEach(bookBtn => {
 });
 
 function redirected() {
-   location.replace("/FrontEnd/log-in/signup.html")
+   location.replace("./signup.html")
  }

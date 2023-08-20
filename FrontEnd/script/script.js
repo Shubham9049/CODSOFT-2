@@ -1,7 +1,6 @@
 const BaseUrl="https://safarbooking.onrender.com"
 let menu = document.querySelector('#menu-btn');
 let navbar = document.querySelector('.header .navbar');
-// const storedname=localStorage.getItem("userName") || null
 const loginBtn=document.getElementById("login")
 const serachroom=document.getElementById("search")
 
@@ -80,13 +79,6 @@ var swiper = new Swiper(".review-slider", {
       },
       
 });
-
-// if(storedname){
-//     loginBtn.innerHTML=`<i class="fa-solid fa-user"></i>  ${storedname.split(' ')[0]}/Log-out`
-// }else {
-//     // loginBtn.innerHTML == ''
-//     loginBtn.textContent == 'Login/Signup'
-// }
 
 serachroom.addEventListener("submit",(e)=>{
     e.preventDefault();

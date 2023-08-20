@@ -6,6 +6,7 @@ const form=document.getElementById("booknow")
 form.addEventListener("submit",(e)=>{
    e.preventDefault()
    let obj={
+      customerName:document.getElementById("customer").value,
       name:document.getElementById("Suite").value,
       adults:document.getElementById("adults").value,
       childrens:document.getElementById("childrens").value,

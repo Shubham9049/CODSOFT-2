@@ -1,5 +1,9 @@
 const mongoose=require("mongoose")
 const bookingschema=mongoose.Schema({
+    customerName:{
+        type:String,
+        
+    },
     name:{
         type:String,
     },

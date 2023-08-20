@@ -5,15 +5,15 @@ const bookingRoutes=require("express").Router()
 
 bookingRoutes.post("/add",async(req,res)=>{
     try {
-        const{name,adults,childrens,checkinDate,checkoutdate}=req.body
-        const bookingInfo= await bookingModel.findOne({name,checkinDate,checkoutdate})
+        const{customerName,name,adults,childrens,checkinDate,checkoutdate}=req.body
+        const bookingInfo= await bookingModel.findOne({customerName,name,checkinDate,checkoutdate})
         if(bookingInfo)
         {
             return res.status(400).send({message:'Room already booked choose another date or suite'})
         }
         else{
             
-            const booking=new bookingModel({name,adults,childrens,checkinDate,checkoutdate})
+            const booking=new bookingModel({customerName,name,adults,childrens,checkinDate,checkoutdate})
             await booking.save();
             res.status(200).json({"message":"Booking created successfully"})
         }

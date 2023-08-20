@@ -50,7 +50,9 @@ data.forEach((ele,ind) => {
     td4.textContent=ele.checkinDate
     const td5=document.createElement("td")
     td5.textContent=ele.checkoutdate
-    tr.append(td1,td2,td3,td4,td5)
+    const td6=document.createElement("td")
+    td6.textContent=ele.customerName
+    tr.append(td6,td1,td2,td3,td4,td5)
     table.append(tr)
 });
 }

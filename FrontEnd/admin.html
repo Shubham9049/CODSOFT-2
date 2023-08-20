@@ -4,8 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./style/admin.css">
 </head>
 <body>
-    <h1>this is Admin</h1>
+    <!-- navbar -->
+    <header class="header">
+        <a href="" class="logo"><i class="fa-solid fa-location-dot"></i> Safar</a>
+        <nav class="navbar">
+          <a href="./index.html">Home</a>
+          <a href="./signup.html" class="btn" id="login">Log-in/Sign-up</a>
+        </nav>
+        <div id="menu-btn" class="fa-solid fa-bars"></div>
+      </header>
+      <div class="head">
+        <h1 id="text">Safar Booking</h1>
+      </div>
+      <div class="total">
+        <table>
+            <thead>
+                <tr>
+                    <th>Hotel Type</th>
+                    <th>Adults</th>
+                    <th>Childrens</th>
+                    <th>Check-In</th>
+                    <th>Check-Out</th>
+                </tr>
+            </thead>
+            <tbody id="tableData">
+
+            </tbody>
+        </table>
+      </div>
 </body>
+<script src="./script/admin.js"></script>
 </html>

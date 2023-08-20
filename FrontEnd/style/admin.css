@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+
+:root{
+    --primary:#0077b6;
+    --secondary:#48cae4;
+    --black:#333;
+    --white:#fff;
+    --box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+*{
+    font-family: 'poppins',sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform:capitalize;
+    text-decoration: none;
+    /* transition: .2s linear; */
+    outline: none;
+    border: none;
+}
+
+html{
+    font-size: 63%;
+    overflow-x: hidden;
+    scroll-padding-top: 9 rem;
+    scroll-behavior: smooth;
+}
+html::-webkit-scrollbar{
+    width: 0.8rem;
+}
+html::-webkit-scrollbar-track{
+    background: transparent;
+}
+html::-webkit-scrollbar-thumb{
+    background-color: var(--primary);
+    border: 0.5rem;
+}
+section{
+    padding: 5rem 7%;
+}
+.heading{
+    font-size: 4rem;
+    color: var(--primary);
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bolder;
+    margin-bottom: 3rem;
+}
+.header{
+    /* position: fixed; */
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: 1000;
+    background-color:var(--white) ;
+    box-shadow: var(--box-shadow);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 9%;
+}
+
+.header .logo{
+    font-size: 2.5rem;
+    font-weight: bolder;
+    color: var(--black);
+}
+.header .logo i{
+    color: var(--primary);
+    padding-right: 0.5rem;
+}
+
+.header .navbar a{
+    font-size: 1.7rem;
+    color: var(--black);
+    margin: 0 1rem;
+}
+.header .navbar a:hover{
+    color: var(--primary);
+}
+
+#menu-btn{
+    display: none;
+    font-size: 2.5rem;
+    margin-left: 1.7rem;
+    cursor: pointer;
+    color: var(--black);
+
+}
+#menu-btn :hover{
+    color: var(--primary);
+}
+.btn{
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 1rem 3rem;
+    background-color: var(--primary);
+    border-radius: 5rem;
+    cursor: pointer;
+    color: var(--white);
+    font-size: 1.7rem;
+
+}
+.btn:hover{
+    
+background-color: var(--secondary);
+}
+
+.header .navbar .btn{
+    margin-top: 0;
+    color: var(--white);
+}
+
+#text{
+    text-align: center ;
+    margin: 50px 0;
+    font-size: xx-large;
+    text-decoration: underline;
+    text-transform: uppercase;
+    color: var(--primary);
+    
+}
+.total{
+    padding: 10px 10px;
+}
+
+.total table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+.total table td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px 40px;
+    font-size: 18px;
+  }

@@ -9,7 +9,7 @@ bookingRoutes.post("/add",async(req,res)=>{
         const bookingInfo= await bookingModel.findOne({name,checkinDate,checkoutdate})
         if(bookingInfo)
         {
-            return res.status(400).send({message:'Room is already booked'})
+            return res.status(400).send({message:'Room already booked choose another date or suite'})
         }
         else{
             

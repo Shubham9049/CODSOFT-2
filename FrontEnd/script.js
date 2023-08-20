@@ -1,4 +1,4 @@
-const BaseUrl="http://localhost:4000"
+const BaseUrl="https://safarbooking.onrender.com"
 let menu = document.querySelector('#menu-btn');
 let navbar = document.querySelector('.header .navbar');
 // const storedname=localStorage.getItem("userName") || null

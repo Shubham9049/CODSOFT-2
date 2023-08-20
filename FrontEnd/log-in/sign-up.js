@@ -1,4 +1,4 @@
-const BaseUrl="http://localhost:4000"
+const BaseUrl="https://safarbooking.onrender.com"
 let slider_button=document.querySelector(".slider_button")
 let Sign_button=document.querySelector(".Sign-up_button")
 let log_button=document.querySelector(".log-in_button")

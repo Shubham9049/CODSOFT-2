@@ -1,4 +1,4 @@
-// const BaseUrl="http://localhost:4000"
+// const BaseUrl="https://safarbooking.onrender.com"
 const LogInForm=document.getElementById("Log-in")
 
 
@@ -28,7 +28,11 @@ LogInForm.addEventListener("submit",(e)=>{
         if(res.user.role==="admin"){
             // alert('Login Successfully')
             Swal.fire('welcome admin')
-            location.replace("http://127.0.0.1:5500/FrontEnd/admin/admin.html")
+            setTimeout(()=>{
+                // window.location=`E:\CODSOFT-2\FrontEnd\admin\admin.html`
+                location.replace("http://127.0.0.1:5500/FrontEnd/admin/admin.html")
+            },2000)
+            
         }else{
             Swal.fire('Login Successfully')
             setTimeout(() => {

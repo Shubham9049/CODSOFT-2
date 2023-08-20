@@ -1,4 +1,4 @@
-const BaseUrl="http://localhost:4000"
+const BaseUrl="https://safarbooking.onrender.com"
 const localname=localStorage.getItem("userName") || null
 const form=document.getElementById("booknow")
 
@@ -26,7 +26,7 @@ form.addEventListener("submit",(e)=>{
       Swal.fire(res.message)
       setTimeout(() => {
          redirect()
-      }, 1000);
+      }, 2000);
      }else{
       alert(res.message)
      }
@@ -34,7 +34,7 @@ form.addEventListener("submit",(e)=>{
 })
 
 function redirect() {
-   localStorage.clear()
-   location.replace("http://127.0.0.1:5500/FrontEnd/index.html")
+   // localStorage.clear()
+   location.replace("http://127.0.0.1:5500/FrontEnd/AfterLogin/LoginedRoom.html")
  }
  

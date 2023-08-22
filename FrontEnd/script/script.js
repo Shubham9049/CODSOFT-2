@@ -101,6 +101,7 @@ serachroom.addEventListener("submit",(e)=>{
             Swal.fire(res.msg)
         }else{
             Swal.fire(res.msg)
+            
         }
     })
 })

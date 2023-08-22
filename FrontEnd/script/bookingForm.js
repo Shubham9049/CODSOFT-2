@@ -27,7 +27,7 @@ form.addEventListener("submit",(e)=>{
      if(res){
       Swal.fire(res.message)
       setTimeout(() => {
-         // redirect()
+         redirect()
       }, 2000);
      }else{
       alert(res.message)

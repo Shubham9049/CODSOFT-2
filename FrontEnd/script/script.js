@@ -98,9 +98,9 @@ serachroom.addEventListener("submit",(e)=>{
     .then(res=>res.json())
     .then((res)=>{
         if(res){
-            alert(res)
+            Swal.fire(res.msg)
         }else{
-            alert(res.error)
+            Swal.fire(res.msg)
         }
     })
 })

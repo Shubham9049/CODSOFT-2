@@ -15,7 +15,7 @@ bookingRoutes.post("/add",async(req,res)=>{
             
             const booking=new bookingModel({customerName,name,adults,childrens,checkinDate,checkoutdate})
             await booking.save();
-            res.status(200).json({"message":"Booking created successfully"})
+            res.status(200).json({"message":"Booking created successfully",booking:booking})
         }
         
     } catch (error) {
@@ -28,7 +28,7 @@ bookingRoutes.post("/searchroom",async(req,res)=>{
         const{name,adults,childrens,checkinDate,checkoutdate}=req.body
     const bookingInfo= await bookingModel.findOne({name,checkinDate,checkoutdate})
     if(bookingInfo){
-        return res.status(400).send({msg:"room is already booked"})
+        return res.status(400).send({msg:"Room is already booked try for another date"})
     }else{
         return res.status(200).send({msg:"Room is available Please Log-in"})
     }

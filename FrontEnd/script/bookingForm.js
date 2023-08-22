@@ -23,10 +23,11 @@ form.addEventListener("submit",(e)=>{
    })
    .then(res=>res.json())
    .then((res)=>{
+      console.log(res)
      if(res){
       Swal.fire(res.message)
       setTimeout(() => {
-         redirect()
+         // redirect()
       }, 2000);
      }else{
       alert(res.message)
